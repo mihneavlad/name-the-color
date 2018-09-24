@@ -1,5 +1,5 @@
 {
-  "name": "name-the-color",
+  "name": "hex-color-mv",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Mihnea Vlad <mihnel@yahoo.com>",
@@ -13,6 +13,10 @@
     "deploy": "yarn build && chmod +x dist/index.js && npm link",
     "start": "yarn build && node dist/index.js",
     "undeploy": "npm unlink"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mihneavlad/name-the-color.git"
   },
   "dependencies": {
     "color-name-list": "^3.46.0",
