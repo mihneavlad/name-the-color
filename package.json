@@ -1,0 +1,24 @@
+{
+  "name": "name-the-color",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mihnea Vlad <mihnel@yahoo.com>",
+  "license": "MIT",
+    "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "scripts": {
+    "build": "babel src -d dist",
+    "deploy": "yarn build && chmod +x dist/index.js && npm link",
+    "start": "yarn build && node dist/index.js",
+    "undeploy": "npm unlink"
+  },
+  "dependencies": {
+    "color-name-list": "^3.46.0",
+    "nearest-color": "^0.4.2"
+  },
+  "bin": {
+    "hex-color": "dist/index.js"
+  }
+}
